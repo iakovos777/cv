@@ -1,0 +1,6 @@
+-check how it seems in device mode(smartphone mode)
+-fix device mode (@media)
+
+
+
+-fix Send Message Button
