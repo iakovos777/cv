@@ -954,10 +954,10 @@ padding-bottom:0px;
 @media (max-width: 767px){
 	.contact .contact-form .col-6,
 	.publications .publication-item,
-	.resume .resume-item,
-	.resume .resume-item .experience,
-	.resume .resume-item .education,
-	.resume .resume-item .certificate,
+	.resume .resume-content,
+	.resume .resume-content .experience,
+	.resume .resume-content .education,
+	.resume .resume-content .certificate,
 	.about .about-content .skills,
 	.about .about-content .personal-info{
 	 -ms-flex: 0 0 100%;
@@ -976,6 +976,17 @@ padding-bottom:0px;
 	}
 }
 
+@media screen and (max-width: 350px){
+	.resume .resume-content,
+	.resume .resume-content .experience,
+	.resume .resume-content .education,
+	.resume .resume-content .certificate{
+	 -ms-flex: 0 0 100%;
+     flex: 0 0 100%;
+     max-width: 100%;
+	}
+	
+}
 
 
 
