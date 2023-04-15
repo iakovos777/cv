@@ -7,7 +7,7 @@
    <!-- Template css Files -->
 	<link rel="stylesheet" href="css/style.css" type="text/css">
   <link rel="stylesheet" href="css/skins/orange.css" type="text/css">
-  
+  <link rel="stylesheet" href="css/academicons.min.css"/> 
  
 
 </head>
@@ -51,6 +51,7 @@
          <a href="https://twitter.com/IakovosEvd/" title="Twitter"><i class="fa fa-twitter"></i></a>
          <a href="https://github.com/iakovosevdaimon/" title="GitHub"><i class="fa fa-github"></i></a>
          <a href="https://www.linkedin.com/in/iakovos-evdaimon-57966b1a9/" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
+         <a href="https://scholar.google.com/citations?user=Gkh4ulEAAAAJ&hl=el&oi=ao" title="Scholar"><i class="ai ai-google-scholar-square"></i></a>
        </div>
      </div>
     </div>
@@ -101,7 +102,7 @@
                       <div class="row">
                          <div class="about-text padd-15">
                             <h3>Education & Work Experience</h3>
-                            <p>My name is Iakovos Evdaimon and I hold a B.Sc. in Informatics from <a href="https://aueb.gr/">Athens University of Economics and Business(AUEB)</a>, where I completed my diploma thesis with Professor <a href="http://www.db-net.aueb.gr/michalis/">Michalis Vazirgiannis</a>. After completing my thesis statement, I participated as a research intern in the <a href="http://www.lix.polytechnique.fr/dascim/">Data and Mining Science(DaSciM)</a> team of <a href="https://www.polytechnique.edu/en/">École Polytechnique</a> for about six months.</p>
+                            <p>My name is Iakovos Evdaimon and I hold a M.Sc. in Informatics from <a href="https://www.universite-paris-saclay.fr/en">University of Paris Saclay</a>, where I completed my diploma thesis with Professor <a href="http://www.db-net.aueb.gr/michalis/">Michalis Vazirgiannis</a>. Currently, I am working as a research engineer in the <a href="http://www.lix.polytechnique.fr/dascim/">Data and Mining Science(DaSciM)</a> team of <a href="https://www.polytechnique.edu/en/">École Polytechnique</a>.</p>
                          </div>
                       </div>
                       <div class="row">
@@ -111,7 +112,16 @@
                                    <p>Birthday : <span>28 May 1995</span></p>
                                 </div>
                                 <div class="info-item padd-15">
-                                   <p>Age : <span>26</span></p>
+                                   <p>Age : <span id="age"></span></p>
+                                   <script>
+				      // calculate age based on birth year
+				      const birthYear = 1995;
+				      const currentYear = new Date().getFullYear();
+				      const age = currentYear - birthYear;
+
+				      // display age in span element
+				      document.getElementById("age").innerHTML = age;
+				    </script>
                                 </div>
                                 <div class="info-item padd-15">
                                    <p>Website : <span><a href="https://iakovosevdaimon.github.io/cv/">iakovosevdaimon.github.io/cv/</a></span></p>
@@ -120,13 +130,13 @@
                                    <p>Email : <span>ievdaimon7@gmail.com</span></p>
                                 </div>
                                 <div class="info-item padd-15">
-                                   <p>Degree : <span>B.Sc. Informatics</span></p>
+                                   <p>Degree : <span>M.Sc. Informatics - Data Science</span></p>
                                 </div>
                                 <div class="info-item padd-15">
                                    <p>Phone : <span>+30 6948483975</span></p>
                                 </div>
                                 <div class="info-item padd-15">
-                                   <p>City : <span>Pefki, Attica, Greece</span></p>
+                                   <p>City : <span>Palaiseau, Île-de-France, France</span></p>
                                 </div>
                                 <div class="info-item padd-15">
                                    <p>Nationality : <span>Greek</span></p>
@@ -220,6 +230,19 @@
                                  <div class="timeline-item">
                                    <div class="circle-dot"></div>
                                    <h6 class="timeline-date">
+                                    <i class="fa fa-calendar"></i>September 2021 - September 2022
+                                   </h6>
+                                   <h4 class="timeline-title"><a href="https://www.universite-paris-saclay.fr/en">University of Paris Saclay</a></h4>
+                                   <p class="timeline-text">
+                                    M.Sc. degree in Informatics, Data Science track</p>
+                                    
+                                 </div>
+                                 
+                                 <!-- timeline Item End -->
+                                 <!-- timeline Item -->
+                                 <div class="timeline-item">
+                                   <div class="circle-dot"></div>
+                                   <h6 class="timeline-date">
                                     <i class="fa fa-calendar"></i>October 2013 - July 2021
                                    </h6>
                                    <h4 class="timeline-title">Department of Informatics, <a href="https://aueb.gr/">Athens University of Economics and Business</a></h4>
@@ -247,16 +270,7 @@
                                     <h6 class="timeline-date">
                                        <i class="fa fa-calendar"></i>September 2010 - June 2013
                                     </h6>
-                                    <h4 class="timeline-title">1st General Senior High School Maroussi </h4>
-                                 </div>
-                                 <!-- timeline Item End -->
-                                 <!-- timeline Item -->
-                                 <div class="timeline-item">
-                                   <div class="circle-dot"></div>
-                                   <h6 class="timeline-date">
-                                    <i class="fa fa-calendar"></i>September 2001 - June 2010
-                                   </h6>
-                                   <h4 class="timeline-title">Greek-French school Saint Joseph</h4>
+                                    <h4 class="timeline-title">1st General Lyceum of Maroussi </h4>
                                  </div>
                                  <!-- timeline Item End -->
                               </div>
@@ -272,7 +286,18 @@
                                  <div class="timeline-item">
                                    <div class="circle-dot"></div>
                                    <h6 class="timeline-date">
-                                    <i class="fa fa-calendar"></i>March 2021 - August 2021
+                                    <i class="fa fa-calendar"></i>October 2022 - Present
+                                   </h6>
+                                   <h4 class="timeline-title">Research Engineer</h4>
+                                   <p class="timeline-text">
+                                    <a href="http://www.lix.polytechnique.fr/dascim/">Data and Mining Science(DaSciM)</a> team of <a href="https://www.polytechnique.edu/en/">École Polytechnique</a>.</p>
+                                 </div>
+                                 <!-- timeline Item End -->
+                                 <!-- timeline Item -->
+                                 <div class="timeline-item">
+                                   <div class="circle-dot"></div>
+                                   <h6 class="timeline-date">
+                                    <i class="fa fa-calendar"></i>April 2022 - September 2022
                                    </h6>
                                    <h4 class="timeline-title">Research Intern</h4>
                                    <p class="timeline-text">
@@ -504,11 +529,28 @@
                   <!-- Publication Item -->
                      <div class="publication-item padd-15">
                         <p>
-                           Nikolentzos G., Panagopoulos G., <u>Evdaimon I.</u> and Vazirgiannis M.
+                          Evdaimon, I., Abdine, H., Xypolopoulos, C., Outsios, S., Vazirgiannis, M., & Stamou, G. (2023).                
                         </p>
                         <p>
-                         <a href="https://arxiv.org/pdf/2104.05562.pdf">Can Author Collaboration Reveal Impact? The Case of h-index</a>                      
+                         <a href="https://arxiv.org/pdf/2304.00869.pdf">GreekBART: The First Pretrained Greek Sequence-to-Sequence Model</a>.                      
                         </p>
+                        <p>
+                         arXiv preprint arXiv:2304.00869.
+                        <p>
+                     </div>
+                     <!-- Publication Item End-->
+                     <!-- Publication Item -->
+                       
+                     <div class="publication-item padd-15">
+                        <p>
+                          Nikolentzos, G., Panagopoulos, G., Evdaimon, I., & Vazirgiannis, M. (2021).                
+                        </p>
+                        <p>
+                         <a href="https://link.springer.com/chapter/10.1007/978-3-030-86668-6_8">Can Author Collaboration Reveal Impact? The Case of h-index.</a>.                      
+                        </p>
+                        <p>
+                         Predicting the Dynamics of Research Impact. Springer, pages: 177-194.
+                        <p>
                      </div>
                      <!-- Publication Item End-->
                   </div>
